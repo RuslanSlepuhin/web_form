@@ -9,7 +9,6 @@ from aiogram.filters import CommandStart
 from aiogram.types import Message
 from aiogram.utils.markdown import hbold
 from aiogram.webhook.aiohttp_server import SimpleRequestHandler, setup_application
-
 from telegram import variables
 from telegram.bot_helper import HelperBot
 
@@ -56,7 +55,7 @@ class WebhookBot:
             await message.answer(f"Hello, {hbold(message.from_user.full_name)}!")
             print("your user id:", message.chat.id)
             if message.chat.id not in variables.admins_user_id:
-                await self.bot.send_message(message.chat-id, "You have not permissions to use this bot")
+                await self.bot.send_message(message.chat.id, "You have not permissions to use this bot")
             else:
                 markup = await self.helper.replyMarkupBuilder(*variables.bar_buttons_start)
                 await self.bot.send_message(message.chat.id, f"hello, this bot helps to works with your forms",

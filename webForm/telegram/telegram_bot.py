@@ -44,22 +44,6 @@ class BotHandlers:
             else:
                 markup = await self.helper.replyMarkupBuilder(*variables.bar_buttons_start)
                 await self.bot.send_message(message.chat.id, f"hello, this bot helps to works with your forms", reply_markup=markup)
-                # await self.bot.send_message(message.chat.id, "Пожалуйста, введите новый текст", reply_markup=types.ForceReply())
-
-
-            # await message.answer(f"Hello, {hbold(message.from_user.full_name)}!")
-
-        # @self.dp.message(F.photo)
-        # async def photo_handler(message: types.Message) -> None:
-        #     photo = message.photo[-1]  # Последний элемент списка - наибольший размер фото
-        #     file_id = photo.file_id
-        #     file = await self.bot.get_file(file_id)
-        #     # Скачайте файл
-        #     result = await self.bot.download_file(file.file_path)
-        #     # Сохраните файл
-        #     file_name = f"./media/pictures/bill_{datetime.now().strftime('%H-%M')}.jpg"
-        #     with open(file_name, 'wb') as f:
-        #         f.write(result.read())
 
         @self.dp.message(F.text)
         async def text_handler(message: types.Message) -> None:
@@ -77,7 +61,3 @@ class BotHandlers:
             await asyncio.sleep(random.randrange(1, 4))
 
 
-# if __name__ == "__main__":
-#     logging.basicConfig(level=logging.INFO, stream=sys.stdout)
-#     bot = BotHandlers(token='6784209473:AAESK6fiESV_ijnf22gwFKBGwiNG9-dalkc')
-#     asyncio.run(bot.handlers())
