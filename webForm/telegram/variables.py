@@ -9,6 +9,7 @@ form_excel_name = "form_data.xlsx"
 caption_send_file = "take it"
 
 bot_domain = "https://4dev.itcoty.ru"
+
 external_web_hook = "/external"
 
 keys_as_questions = {

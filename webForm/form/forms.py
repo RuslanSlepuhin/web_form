@@ -8,6 +8,7 @@ class FormForms(forms.Form):
     whatTradingStrategy = forms.CharField()
     optimalInvestmentPeriod = forms.JSONField()
     howToReach = forms.CharField()
+    formName = forms.CharField()
 
 # class MyForm(forms.Form):
 #     QUESTION_CHOICES = (

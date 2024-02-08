@@ -7,6 +7,7 @@ class webFormModel(models.Model):
     whatTradingStrategy = models.CharField(max_length=150, null=False, blank=False)
     optimalInvestmentPeriod = models.JSONField(null=False, blank=False)
     howToReach = models.CharField(max_length=50, null=False, blank=False)
+    formName = models.CharField(max_length=100)
 
     def __str__(self):
         return str(self.name)
