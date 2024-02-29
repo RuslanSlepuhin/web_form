@@ -9,10 +9,4 @@ class FormForms(forms.Form):
     optimalInvestmentPeriod = forms.JSONField()
     howToReach = forms.CharField()
     formName = forms.CharField()
-
-# class MyForm(forms.Form):
-#     QUESTION_CHOICES = (
-#         ('option1', 'Option 1'),
-#         ('option2', 'Option 2'),
-#     )
-#     question = forms.ChoiceField(choices=QUESTION_CHOICES, widget=forms.RadioSelect())
+    email = forms.CharField()

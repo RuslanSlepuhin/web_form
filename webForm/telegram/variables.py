@@ -19,4 +19,5 @@ keys_as_questions = {
     "whatTradingStrategy": "What trading strategy do you prefer?",
     "optimalInvestmentPeriod": "What is the optimal investment period for you?",
     "howToReach": "How to reach you (preferably Telegram)",
+    "email": "email",
 }

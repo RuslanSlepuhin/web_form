@@ -8,6 +8,7 @@ class webFormModel(models.Model):
     optimalInvestmentPeriod = models.JSONField(null=False, blank=False)
     howToReach = models.CharField(max_length=50, null=False, blank=False)
     formName = models.CharField(max_length=100)
+    email = models.CharField(max_length=100, null=False, blank=False)
 
     def __str__(self):
         return str(self.name)

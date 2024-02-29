@@ -76,6 +76,10 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'webForm.sqlite3',
+    },
+    'sqlite': { # Ruslan
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'form/database/webForm.sqlite3',
     }
 }
 
